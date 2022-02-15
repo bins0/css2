@@ -1,0 +1,30 @@
+body{
+    background-color: orange;
+    
+}
+
+.grid{
+    display: grid;/*float flex도 가능*/
+    grid-template-columns: 1fr;
+}
+
+.item{
+    display: inline-block;
+    padding: 30px;
+    border: 2px solid yellow;
+    background-color: bisque;
+}
+
+@media screen and (min-width:520px){
+    body{
+       background-color: lightblue !important;
+        /* !important이걸로사용 우선순위 이게먼저됨 */
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    body{
+        background-color: coral;
+    }
+}

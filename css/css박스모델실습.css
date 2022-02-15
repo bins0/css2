@@ -1,0 +1,41 @@
+h1{ text-align: center;
+    background-color: orange;
+    padding: 20px;} /*padding auto는 부모요소에 영향받음*/
+
+div{
+    min-width: 200px;
+    border: 2px dashed black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    min-width: 100px; /*div에도최솟값지정하면튀어나오지 않음*/
+    background-color: burlywood;
+    padding: inherit; /*p 자식 div 부모 p에 inherit를 적으면 divdml 값을 가져움*/
+    padding-left:30px
+}
+/* 실습2 */
+h2{text-align: center;}
+
+table{ 
+    border-collapse: collapse;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.f{
+    background-color: orange;
+    padding-bottom: 2px;
+    border-bottom: 2px solid red;
+}
+
+tr{
+    background-color: antiquewhite;
+}
+
+td {padding:10px 20px;
+text-align: center;}
+
+

@@ -1,0 +1,38 @@
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.color{
+    background-color: antiquewhite;
+    border: 3px solid orange;
+}
+
+
+
+.hash > ul > li{
+    
+    float: right;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+
+.n > p::after{
+    display: inline-block;
+    content: "N";
+    text-align: center;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+

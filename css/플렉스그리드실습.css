@@ -1,0 +1,32 @@
+.flex_box, .grid_box{
+    border: 1px solid black;
+    width: 100%;
+    height: 300px;
+}
+
+.flex_box{
+    display: flex;
+    justify-content: space-around;/*기본값인 strach를 around로정렬시키고 */
+    align-items: flex-end;/*끝에지정됨*/
+}
+
+.grid_box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/*1프레임총4번 행값 strach되어있음*/
+    grid-gap: 10px;/*그리드셀과의 간격넓여주고싶다면*/
+    align-items: center;/*기본값strach여서 가우데정렬시키기*/
+}
+
+.f_item, .g_item{
+    display: inline-block;
+    padding: 30px;
+    
+}
+
+.f_item{
+    background-color: aqua;
+}
+
+.g_item{
+    background-color: brown;
+}

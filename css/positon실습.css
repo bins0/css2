@@ -1,0 +1,28 @@
+.shortcut{
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+
+ul{
+    list-style-type: none;
+
+}
+/* ul li둘다 리스트 list style타입가지고 있어서 어디넣어도 상관없음 */
+a{
+    color: black;
+    text-decoration: none; /*밑줄없애짐
+    */
+}
+
+a:link, a:visited{
+    color:balck;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+}

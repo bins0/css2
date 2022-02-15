@@ -1,0 +1,27 @@
+
+/* CSS기본 속성 확인 */
+.color_name {color : yellow; background-color: black;}
+.coloer_rgb {color: rgb(255,255,0);background-color: rgb(171, 203, 237);}
+.color_16{color: #FF0; background-color: #C5B4F3;}
+/* 16진수 또다른방법 
+16진수로 색적을때 6자리, 3자리로 값을 넣어줄수있다
+3자리 수로 넣게되면 각 R,G,B값에 한자리 씩 값이 들어간다.
+*/
+
+
+
+.background_image {
+    background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.5) ) ,
+    url("/img/cs.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.background_image2 {
+    background: url("/img/cs.jpg"); no-repeat bottom;  fixed;
+}
+    
+/* ./: 현재위치에서찾는다
+ ../ : 현재위치의 상위폴더에서 
+ / :루트 혹은 시작폴더에서 찾는다 젤위에있는폴더 */

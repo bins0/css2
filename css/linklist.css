@@ -1,0 +1,35 @@
+a { display: inline-block; /*패딩마진사용가능*/
+    padding: 20px; 
+    border-radius: 5px; /*끝이 좀 둥글게*/
+    text-decoration: none;
+    color: black;
+} /*전체위치*/
+
+a:link, :visited {
+    color: black;
+} 
+a:hover { /*link와 vixited사용해줘야함 작성해주지 않으면 hover 젤위 a태그 없으면 hover작동안함*/
+   
+    color: red;
+    background-color: lightgray;
+}
+a:active{/*클릭시 바뀌는거*/
+    color: yellow;
+    background-color: blue;
+}
+
+/* 리스트CSS효과꾸미기 */
+.unordered_list_mark{
+    list-style-image: url("../img/pencil\ \(1\).png"); /*순서없는모양사용*/
+    list-style-position: outside;/*문단바깥쪽*/
+}
+
+.ordered_list_mark{
+    list-style-type: none;
+    list-style-position: inside;/*문단안쪽*/
+}
+
+li {
+    background-color: beige;
+}
+

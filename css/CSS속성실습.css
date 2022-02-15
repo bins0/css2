@@ -1,0 +1,47 @@
+
+h1{
+    font-family: fantasy;
+}
+
+div{
+    width: 50%;
+    border: 3px solid olive;
+    background-color: beige;
+}
+
+ul{
+    list-style-type: circle;
+    
+   
+}
+
+.link:link, link:visited{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover{
+    font-style: italic;
+    text-shadow: 1px 2px 2px gray;
+}
+
+span {
+    font-family: '궁서';
+    color: green;
+    text-decoration: underline wavy 2px red;
+}
+
+table{
+    background-color: blanchedalmond;
+    border-collapse: collapse; /*하면 하나 하나띄어져있다 그래서 연결하려면 collapse를 사용하면 붙어지게된다*/
+    border-radius: 20px;
+    
+}
+
+
+.f1{ background-color: orange;
+    border-bottom: 2px solid red;
+    border-radius: 20px;
+}
+tr{background-color: antiquewhite;} 

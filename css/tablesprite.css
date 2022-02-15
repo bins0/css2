@@ -1,0 +1,44 @@
+
+
+/* 테이블 */
+table{
+    border: solid 3px black;
+    border-collapse: collapse; /*속성값 collapse합침 따로뗌separate*/
+    border-spacing: 10px;/*separat일때만*/
+    text-align: center;
+    background-color: burlywood; 
+    empty-cells: hide;/*비어진셀정리 hide사라짐 separat일때만 */
+    
+}
+
+td{
+    border: dashed 1px gray;
+}
+
+
+
+/* 이미지 스프라이트 */
+
+.up, .down, .left, .right{
+     background-image: url("../img/img1.png");
+    width: 59px;
+    height: 62px;
+}
+
+
+.up{
+   
+    background-position: 0 0; 
+}
+.down{
+    
+    background-position: -59px 0; 
+}
+.left{
+   
+    background-position: -120px 0; 
+}
+.right{
+    
+    background-position: -180 0; 
+}

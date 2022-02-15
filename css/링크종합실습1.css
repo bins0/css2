@@ -1,0 +1,13 @@
+h1{padding: 20px;}
+
+.button:link, .button:visited { 
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: red;
+}

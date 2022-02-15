@@ -1,0 +1,115 @@
+
+/* 결합선택자 */
+.parents p{
+ /* 띄어쓰기 한칸 p 하면 자식요소가지정 */
+    background-color: blue;
+}
+
+
+/* 자식선택자 */
+/* >는 자식요소에만 들어감 */
+.parents_children > p{
+    background-color: aqua;
+}
+
+
+/* 일반동위연산자 */
+/* ~ 은 div바깥쪽또는 뒷쪽에 태그에 지정됨 */
+.sibling ~ p {
+    background-color: aquamarine;
+}
+
+
+/* 일반동위선택자 */
+/* 현재태그지정아니고 가까운 태그에서만 지정되어짐 */
+.adjacent + p {
+    background-color: cadetblue;
+}
+
+
+/* 의사클래스 동적클래스 */
+.hover:hover{
+    background-color: blueviolet;
+}
+
+.focus:focus{
+    color: brown;
+    font-weight: bold;
+}
+
+
+/* 상태의사클래서 */
+/* 두번째는 input클래스안에있는 input태그/같은위치에있는 바로뒤태그 (+) /바꿔야될태그span선택시 색바꿈 */
+.input >input:checked + span {
+     color: red;
+    
+    }
+.input >input:disabled + span {
+    text-decoration: line-through;/*가운데 줄그어줌*/
+    }
+
+
+/* 구조의사클래스 */
+    /* 부모안에있는 p(자식)태그중 첫번째만 선택됨  input태그함께사용색안입혀짐*/
+    p.first:first-child{
+        background-color: orange;
+    }
+  
+    p.first:last-child{
+        background-color: aquamarine;
+    }
+
+    p.first:nth-child(2){
+        background-color: rgb(46, 66, 102);
+    }
+
+
+    /* 구조의클래스*/
+    p.type:first-of-type{
+        background-color: black;
+        color: white;
+    }
+
+
+    /* 의사요소 */
+    /* 자식요소의 p태그에 첫글자만크게 */
+    .pseudo > p::first-letter {
+        font-size: 2em;
+    }
+
+    /* 자식요서의 p태그의 첫번째 줄만 그어짐 */
+    .pseudo_line > p::first-line{
+        text-decoration: underline;
+    }
+    
+
+    /* ::before after  로고등 들어가면 깔끔해짐*/
+    .before_after > p::before{
+        content: "before";
+    }
+
+    .before_after > p::after{
+        display: block;
+       content: '';
+       width: 20px;
+       height: 20px;
+       background-color: blue;
+    }
+
+    /* selection드래그 값변화 */
+    .selection > p::selection{
+        color: olive;
+    }
+
+    /* 속성선택자 속성가지면 전부선택됨  클래스도가능 [title="div title"]하면 이것만 가능*/
+    [title *="p"] {
+        background-color: darkmagenta;
+    }
+    /* 연결된것중 시작하는요소에서 가지고오는거 : |
+    값하나만 적어도 동일한값 가져옴 : ^ , * */
+
+    /* 기타의사클래스 */
+    .not > p:not([title="n"]){
+        color: violet;
+    }
+    /* 무엇이아닐때 이색을 넣어라 title이 n이아니거에 색넣기 */

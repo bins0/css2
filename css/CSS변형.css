@@ -1,0 +1,42 @@
+.rotation_2d{
+    border: 1px solid black;
+    background-color: aquamarine;
+    transform: rotate(23deg);
+}
+
+.rotation_3d{
+    border: 1px solid black;
+    background-color: aquamarine;
+    transform: rotateX(45deg) rotateY(15deg);/*여러속성한번에 추가*/
+    
+}
+
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: rotate(0deg);
+    transition: width 1s transform 1s;
+    
+}
+
+.transition:hover{
+    transform: rotate(45deg);
+    width: 200px;
+}
+/* 애니메이션  */
+.keyframe{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+   animation-name: rotation;
+   animation-duration:  1s;/*얼마동안 돌건지*/
+   animation-timing-function: linear;/*동일한 속도로*/
+}
+
+@keyframes rotation {
+    form{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}/*to는 마칠때*/
+}
+
+

@@ -1,0 +1,13 @@
+ul{
+    overflow: auto; /*자동으로 잡아줌 컨텐츠가 없어서 색이안보여서넣음*/
+    padding: 20px;
+    background-color: yellow;
+    list-style-type: none;
+}
+
+li{
+    float: left;
+    background-color: green;
+    padding: 20px;
+}
+

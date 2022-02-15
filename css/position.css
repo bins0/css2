@@ -1,0 +1,58 @@
+div{
+    display: inline-block;
+    background-color: burlywood;
+    padding: 20px; 
+    width: 200px;
+    height: auto; /*auto는 안에있는값에 맞게 설정되어 글씨가 밖으로 나오지 않게됨*/
+}
+
+a{
+    width: 200px;
+    height: 30px;
+    background-color: cadetblue;
+}
+
+p{
+    background-color: darkkhaki;  
+    margin: 0; 마진 /*0을 주면 위아래 0이여서 붙게됨*/
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.none{
+    display: none;
+}
+.opacity {
+    filter:opacity(50%); /*조절 하면 투명도 조절됨*/
+}
+
+.stataic{
+    position: static; /*자리음바뀌지 않*/
+}
+
+.relative{
+    position: relative;
+    left:50px;
+} /*50픽셀이떨어짐 한칸띄어져있음*/
+
+.fix{
+    position: fixed;
+    top: 0;
+    right: 0;
+} /*맨위쪽에 고정되어있음*/
+
+.absoulute{
+    position: absolute;
+    right: 0;
+    top: 300px;
+} 오른쪽으로 적어짐 단위 꼭부쳐야 값이 실행된다
+
+/*fixe는 브라우저 화면고정
+absoulute첫화면 고정위치 그대로씀 화면바뀌면 화면크기 밑아래이동됨  원하는 위치에 고정할 수있음 아래에서 하나 위에서 하나 가능하다*/
+
+.clear{
+    background-color: white;
+    width: auto;
+}

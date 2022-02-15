@@ -1,0 +1,69 @@
+.padding {
+    width: 200px; /*컨텐츠사이즈*/
+    background-color: cadetblue;
+    padding: 20px 50px 10px; /*오른왼아래 3개 위쪽오른 아래 왼4개*/ 
+    border: 1px 3px solid black;
+}
+
+
+
+/* border CSS확인*/
+.groove_3d, .ridge_3d, .inset_3d, .outset_3d{
+    width :100px;
+    height: 20px;
+}
+
+.groove_3d{
+    border-style: groove;
+    border-width: 10px; 
+    border-color: blue;
+}
+/* 서로그림자반대 */
+.ridge_3d{
+    border: 10px ridge yellowgreen;
+}
+
+.inset_3d{
+    border: 10px inset cornflowerblue;
+}
+/* 서로그림자반대 */
+.outset_3d{
+    border: 10px outset rosybrown;
+}
+
+.border_width{
+    width: 100px;
+    height: 30px;
+    border-color: black;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-right: 5px dotted;
+    border-bottom: 2px double;
+    border-left: 5px dashed;
+    
+}
+
+.none{
+    width: 100px;
+    height: 30px;
+    background-color: darkblue;
+    border: none; /*보이지도않고 없음*/
+}
+
+.hidden{
+    width: 100px;
+    height: 30px;
+    background-color: darkblue;
+    border: hidden 10px black; /*보이지도않고 있음*/
+}
+
+/* margin CSS확인 */
+.margin{
+    width: 100px;
+    height: 80px;
+    background-color: cadetblue; 
+    margin: 20px;
+    outline: black solid 2px; 
+}
+
+
